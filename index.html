@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Atleta - Pro Club Oferecer produtos para atletas amadores e profissionais, como roupas, calçados e equipamentos específicos para cada modalidade.">
+    <meta name="title" content="Atleta - Pro Club">
+    <title>Atleta - Pro Club</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <!--icones-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <header class="header active">
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="assets/img/LogoAtleta.png" alt="Logo Atleta - Pro Club">
+            </a>
+
+
+            <!--nav menu-->
+            <nav class="navbar active">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#shop" class="navbar-link">O Shop</a>
+                    </li>
+
+                    <!--dropdown-->
+                    <li class="dropdown-item">
+                        <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
+                            Serviços <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Roupas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Tenis
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Meias
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Bolas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Equipamentos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Acessórios
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btn" id="openLogin">Login</a>
+
+            <button class="search-btn" id="searchToggle" aria-label="search">
+                <ion-icon name="search-outline"></ion-icon>
+            </button>
+
+            <!-- Overlay da busca -->
+            <div class="search-overlay" id="searchOverlay">
+                <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <div class="search-container">
+                    <input type="text" placeholder="O que você está procurando?" class="search-input" autofocus />
+                </div>
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="menu mobile">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <!--BANNER-->
+    <section class="banner">
+        <video autoplay muted loop>
+            <source src="assets/videos/5435315_Coll_wavebreak_People_1920x1080.mp4">
+        </video>
+    </section>
+
+    <!--GAlERIA DE IMAGENS-->
+    <section class="section gallery" id="shop">
+        <div class="container-galeria">
+            <p class="section-subtitle text-center">Nosso Produto</p>
+            <h2 class="h2 text-center">Confira o trabalho dos nossos artistas</h2>
+        </div>
+
+        <div class="galeria">
+            <img src="assets/img/cara_camisa_azul.jpg" alt="foto1" />
+            <img src="assets/img/cara_com_celular.jpg" alt="foto2" />
+            <img src="assets/img/muie_de_rosa.jpg" alt="foto3" />
+            <img src="assets/img/muie_encostada_na_parede.jpg" alt="foto4" />
+        </div>
+
+        <div class="botao-ver-mais">
+            <a href="#" class="btn-ver-mais" title="Ver mais produtos">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+        </div>
+
+        <!--Ligtbox-->
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="imagem ampliada" id="lightbox-img" />
+        </div>
+    </section>
+
+    <!--SERVIÇOS-->
+    <section class="section services" aria-label="service">
+        <div class="container-serv">
+            <p class="section-subtitle text-center">Nossos Serviços</p>
+            <h2 class="h2 section-title text-center">O que oferecemos</h2>
+
+            <ul class="service-list">
+                <!--card1-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pageroupas-limpas.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Roupas</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--card2-->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pagetenis.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Tenis</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--card3-->
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pagemeias.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Meias</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--IMG CENTRO-->
+
+                <li class="service-banner">
+                    <figure>
+                        <img src="" alt="" class="w-100">
+                    </figure>
+                </li>
+
+                <!--card4-->
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pagevariante-de-bola-de-futebol.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Bolas</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--card5-->
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pagejoelheira.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Equipamentos</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <!--card6-->
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="assets/img/pagerelogio-de-pulso.png" alt="" class="w-100">
+                        </div>
+
+
+                        <div>
+                            <h3 class="h3 card-title">Acessórios</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut asperiores
+                                deleniti error sunt optio.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+    </section>
+
+    <!--Sobre-->
+
+    <section class="section about" aria-label="sobre" id="sobre">
+        <div class="container-sobre">
+            <figure class="about-banner">
+                <img src="assets/img/corredor-atleta-se-preparar-para-correr-desde-o-inicio-agachado.jpg" alt="sobre"
+                    class="w-100 efeito" />
+            </figure>
+            <div class="about-content">
+                <p class="section-subtitle">Sobre nós</p>
+                <h2 class="h2 section-subtitle">Junto somos mais forte!!!</h2>
+                <p class="section-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit id
+                    architecto non dolor? Consequuntur, maxime. Totam officia voluptates impedit, mollitia debitis nihil
+                    molestias, autem beatae aperiam optio similique at?</p>
+                <a href="#" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!--LOGIN-->
+    <sectionc class="container-login">
+        <div class="wrapper">
+            <span class="bg-animate"></span>
+            <span class="bg-animate2"></span>
+
+            <div class="form-box login">
+                <h2 class="animation">Login</h2>
+
+                <form action="#">
+                    <div class="input-box animation">
+                        <input type="text" required />
+                        <label>Usuário</label>
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" required />
+                        <label>Senha</label>
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </div>
+
+                    <button type="submit" class="btn btn-login">Entrar</button>
+
+                    <div class="logreg-link">
+                        <p>
+                            Não possui uma conta?
+                            <a href="#" class="register-link"> Clique Aqui! </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="info-text login">
+                <h2>Bem-vindo de volta!</h2>
+                <p>A pele é sua. <br>A atitude <br>também!</p>
+            </div>
+
+            <!--Cadastro-->
+            <div class="form-box register">
+                <h2>Criar conta</h2>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required />
+                        <label>Nome</label>
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" required />
+                            <label>email</label>
+                            <ion-icon name="person"></ion-icon>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="password" required />
+                            <label>Senha</label>
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </div>
+
+                        <button type="submit" class="btn btn-login">Cadastre-se</button>
+
+                        <div class="logreg-link">
+                            <p>
+                                Já possui uma conta?
+                                <a href="#" class="login-link"> Clique Aqui! </a>
+                            </p>
+                        </div>
+
+
+                    </form>
+            </div>
+
+            <div class="info-text register">
+                <h2>Seja-Bem-vindo</h2>
+                <p>A pele é sua. <br>A atitude <br>também!</p>
+            </div>
+
+        </div>
+    </sectionc>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
