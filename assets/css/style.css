@@ -778,7 +778,6 @@
     right: 0;
     text-align: right;
     padding: 0 40px 0 100px;
-    display: none;
   }
 
   .info-text h2 {
@@ -809,7 +808,7 @@
     width: 850px;
     height: 600px;
     transform: rotate(10deg) skewY(40deg);
-    transform: rotate(0deg) skewY(0deg);
+   
     transform-origin: bottom right;
     border-bottom: 3px solid rgb(255, 0, 0);
   }
@@ -843,6 +842,7 @@
 
   .wrapper.active .form-box.login .animation {
     transform: translateX(-120%);
+    transition-delay: calc(0.1s * var(--i));
   }
 
   .wrapper .form-box.login .animation {
@@ -850,7 +850,15 @@
     transform: translateX(0);
   }
 
-  
+  .wrapper .info-text.login .animation {
+    transition: 0.7s ease;
+    transform: translateX(0);
+  }
+
+  .wrapper.active .info-text.login .animation {
+    transform: translateX(120%);
+    transition-delay: calc(0.1s * var(--i));
+  }
 
 
 

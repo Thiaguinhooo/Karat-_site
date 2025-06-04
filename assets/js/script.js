@@ -82,8 +82,8 @@ document.addEventListener('keydown', (e) => {
 
 // LOGIN
 const wrapper = document.querySelector('.wrapper');
-const registerLInk = document.querySelector('.register-link');
-const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.logreg-link');
 
 registerLink.onclick = (e) => {
     e.preventDefault();
